@@ -21,6 +21,9 @@ A Node.js script that automates the conversion between MON and shMON tokens on t
 ## Installation
 
 1. Clone this repository or download the script file.
+```
+git clone https://github.com/fadhielnaufan/shMonad-Auto-Bot-Staking.git
+```
 
 2. Install the required dependencies:
 ```bash
