@@ -41,12 +41,20 @@ PRIVATE_KEY=your_private_key_here
 
 1. Run the script:
 ```bash
-node Autobot_shMonad.js
+node shMonad-Auto-Bot-Staking.js
 ```
 
 2. The interactive menu will appear with the following options:
 
 ```
+
+         __    __  ___                      __
+   _____/ /_  /  |/  /___  ____  ____ _____/ /
+  / ___/ __ \/ /|_/ / __ \/ __ \/ __ `/ __  / 
+ (__  ) / / / /  / / /_/ / / / / /_/ / /_/ /  
+/____/_/ /_/_/  /_/\____/_/ /_/\__,_/\__,_/   
+                               by Fadhiel Naufan               
+
 1. Show Current Balances
 2. Setup Auto-Swap Configuration
 3. Start Auto-Swap
@@ -73,33 +81,6 @@ When setting up auto-swap, you'll need to provide:
 - Delay (in minutes) after shMON→MON conversion
 
 The script will then cycle continuously between these operations with your specified delays.
-
-## Configuration
-
-The script includes several configuration options at the top of the file:
-
-```javascript
-// Monad Network Configuration
-const monadNetwork = {
-  name: "Monad Testnet",
-  chainId: 10143,
-  rpcUrl: "https://testnet-rpc.monad.xyz",
-  symbol: "MON",
-  explorer: "https://testnet.monadexplorer.com",
-  contracts: {
-    staking: "0x3a98250F98Dd388C211206983453837C8365BDc1"
-  }
-};
-
-// Gas configuration from successful tx
-const gasConfig = {
-  maxFeePerGas: ethers.parseUnits('52', 'gwei'),
-  maxPriorityFeePerGas: ethers.parseUnits('2', 'gwei'),
-  gasLimit: 60000n
-};
-```
-
-You can modify these values if the network parameters change.
 
 ## Security Considerations
 
